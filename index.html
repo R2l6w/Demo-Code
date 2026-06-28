@@ -133,7 +133,7 @@
 <body>
 
     <div class="container">
-        <!-- صورة تجمع المهن -->
+        <!-- صورة تجمع المهن (أيقونات تعبيرية) -->
         <div class="business-banner">
             ☕ 💇‍♂️ 🛍️ 🍕 💅
         </div>
@@ -217,10 +217,10 @@
                 const now = new Date();
                 const timeString = now.toLocaleDateString('ar-EG', {month:'numeric', day:'numeric'}) + " " + now.toLocaleTimeString('en-US', {hour: '2-digit', minute:'2-digit', hour12: false});
                 
-                stampDates.push(timeString); // حفظ التاريخ في المصفوفة
+                stampDates.push(timeString); // حفظ التاريخ في مصفوفة التواريخ
                 currentStamps++;
                 
-                // حفظ البيانات في المتصفح
+                // حفظ البيانات في متصفح العميل
                 localStorage.setItem('demo_stamps', currentStamps);
                 localStorage.setItem('stamp_dates', JSON.stringify(stampDates));
                 
